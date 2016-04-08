@@ -15,14 +15,14 @@ print df.head()
 print "\n"
 
 ##Converting the column for model names into a set of numbers 
-#and inserting the column vector into the beck of the data set 
+#and inserting the column vector to the beck of the data set 
 df['Model_ord'] = pd.Categorical(df.Model).codes
 ##Extracting the required feature vector from the imported data set 
 X = df[['Mileage', 'Model_ord', 'Doors']]
 ##Extracting the target variables
 y = df[['Price']]
 
-##Appending a column vecotr ones to the front for the bias unit
+##Appending a column vector of ones to the front of the feature vector for the bias unit
 X1 = sm.add_constant(X)
 ##Training created data set using a multivariate regression classifier
 est = sm.OLS(y,X1).fit()
