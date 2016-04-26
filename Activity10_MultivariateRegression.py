@@ -24,13 +24,14 @@ y = df[['Price']]
 
 ##Appending a column vector of ones to the front of the feature vector for the bias unit
 X1 = sm.add_constant(X)
-##Training created data set using a multivariate regression classifier
+##Training created data set using a ordinary least square multivariate regression classifier
 est = sm.OLS(y,X1).fit()
 
 ##Displaying the summary
 print est.summary()
 
 ##Displaying the mean price for the given number of doors (2/4)
+#We can see that the number of doors doesnt influence the price at all
 print y.groupby(df.Doors).mean()
 
 
