@@ -7,10 +7,12 @@ import pandas as pd
 from scipy import stats
 from sklearn.metrics import r2_score
 
+##Setting the seed of random class of numpy
+np.random.seed(2)
 
 ##Creating a random normal distribution to create dataset for page speed and purchase amounts
 pageSpeeds = np.random.normal(3.0, 1.0, 100) #mean value:3.0; std: 1.0; m= 100
-purchaseAmounts = np.random.normal(50.0, 30.0, 100) #mean value:50.0; std:30.0; m= 100
+purchaseAmounts = np.random.normal(50.0, 30.0, 100)/pageSpeeds #mean value:50.0; std:30.0; m= 100
 
 ##Plotting a scatter plot of the dataset
 plt.scatter(pageSpeeds, purchaseAmounts)
