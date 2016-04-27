@@ -31,7 +31,7 @@ def createClusteredData(N,k):
 		##Iterating through the number of points per cluster
 		for j in range(int(pointsPerCluster)): 
 		
-			##Appending to the list a two element list of two randomly chosen values with Gaussian Distribution probality
+			##Appending to the list a two element list of two randomly chosen values with Gaussian Distribution probablity
 			X.append([np.random.normal(incomeCentroid, 10000.0), np.random.normal(ageCentroid,2.0)])
 	
 	##Coverting the list of lists to 2 dimensional numpy array		
