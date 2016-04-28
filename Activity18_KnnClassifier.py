@@ -1,4 +1,4 @@
-####This source code gives an example demonstration of KNN Classifer used to Predict Rating for Movies
+####This source code gives an example demonstration of KNN Classifer for recommending movies
 
 ##Import Statements
 import numpy as np
