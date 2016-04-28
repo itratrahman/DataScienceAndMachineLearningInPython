@@ -1,1 +1,1 @@
-This repository stores the source files of the coursework of the udemy course: "Data Science and Machine Learning in Python".
+This repository stores the source files of programming activities that I practiced for writing Python codes for Data Sceince and Machine Learning. I have used a lot of libraries namely, numpy, matplotlib, scipy, stats, scikit-learn, and others.
